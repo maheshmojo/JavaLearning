@@ -1,5 +1,5 @@
 package Academy.JavaProgramming.Learn;
-
+//Parent Class
 class usedVehicle {
     static String brandName;
     String modelName1;
@@ -20,50 +20,52 @@ class usedVehicle {
     }
 }
 
-class suvModel extends usedVehicle{
+class suvModel extends usedVehicle {  //subclass suvModel Accessing parent class attributes
 
     String modelName;
     String modelNumber;
-    String paintScheme="Red";
-    int year=2014;
+    String paintScheme = "Red";
+    int year = 2014;
     int yearOfMake;
 
 
-    suvModel(){
-        modelName ="Land Cruiser";
-        modelNumber="LC001";
-        colour =this.paintScheme;
-        yearOfMake = yearMake-year;
+    suvModel() {
+        modelName = "Land Cruiser";
+        modelNumber = "LC001";
+        colour = this.paintScheme;
+        yearOfMake = yearMake - year;
     }
 
-    public void suvMethod(){
-        System.out.println("Model Name: "+modelName+":"+modelNumber);
-        System.out.println("Engine Capacity: "+EngineCC);
-        System.out.println("Car colour: "+paintScheme);
-        System.out.println("Total run: "+yearOfMake);
+    public void suvMethod() {
+        System.out.println("Model Name: " + modelName + ":" + modelNumber);
+        System.out.println("Engine Capacity: " + EngineCC);
+        System.out.println("Car colour: " + paintScheme);
+        System.out.println("Total run: " + yearOfMake);
         System.out.println("*----------------------------------------------*");
     }
 }
-     class muvModel extends usedVehicle {
-         String modelName2;
-         String modelNumber;
-         String paintScheme = "blue";
-         int year;
-         int yearOfMake2;
-         muvModel() {
-             modelName2="Verna";
-             modelNumber = "V001";
-             colour = this.paintScheme;
-             year =2012;
-             yearOfMake2= yearMake-year;
-         }
 
-         public void muvMethod() {
-             System.out.println("Model Name: " + modelName2 + ":" + modelNumber);
-             System.out.println("Engine Capacity: " + EngineCC);
-             System.out.println("Car colour: " + paintScheme);
-             System.out.println("Total run: "+yearOfMake2);
-             System.out.println("*----------------------------------------------*");
+class muvModel extends usedVehicle {    //subclass muvModel Accessing parent class attributes
+    String modelName2;
+    String modelNumber;
+    String paintScheme = "blue";
+    int year;
+    int yearOfMake2;
+
+    muvModel() {
+        modelName2 = "Verna";
+        modelNumber = "V001";
+        colour = this.paintScheme;
+        year = 2012;
+        yearOfMake2 = yearMake - year;
+    }
+
+    public void muvMethod() {
+        System.out.println("Model Name: " + modelName2 + ":" + modelNumber);
+        System.out.println("Engine Capacity: " + EngineCC);
+        System.out.println("Car colour: " + paintScheme);
+        System.out.println("Total run: " + yearOfMake2);
+        System.out.println("*----------------------------------------------*");
 
          }
 
